@@ -129,8 +129,10 @@ SparkStream.prototype._transform = function _transform(chunk, encoding, cb) {
     this.ring_keys.forEach(function (rk) {
         var r = self.rings[rk];
         off += buf.write(rk, off);
-        for (var i = 0; i < r.length; i++)
-            off += buf.write(r[i], off);
+        for (var i = 0; i < r.length; i++) {
+            if (r[i])
+                off += buf.write(r[i], off);
+        }
         off += buf.write('\n', off);
     });
 
