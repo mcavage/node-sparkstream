@@ -1,0 +1,18 @@
+{
+  "name": "sparkstream",
+  "version": "0.0.0",
+  "description": "Pipe in a stream of values and get out a stream of sparkline mappings",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mcavage/node-sparkstream.git"
+  },
+  "author": "Mark Cavage <mcavage@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcavage/node-sparkstream/issues"
+  }
+}
